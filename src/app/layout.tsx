@@ -28,14 +28,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://muhammadfasya.dev", // Update with your actual domain
+    url: "https://muhammadfasya.vercel.app",
     siteName: "Muhammad Fasya Portfolio",
     title: "Muhammad Fasya | Full-stack Developer & AI Enthusiast",
     description:
       "Bridging Web Development with Artificial Intelligence. A 6th-semester Informatics Engineering student passionate about building intelligent applications.",
     images: [
       {
-        url: "/og-image.png", // You'll need to create this
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Muhammad Fasya - Portfolio",
