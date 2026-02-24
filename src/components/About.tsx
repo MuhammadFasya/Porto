@@ -73,7 +73,7 @@ export default function About() {
               </p>
               <div className="flex flex-wrap justify-center gap-2">
                 <span className="px-3 py-1 text-xs rounded-full bg-[#00d4ff]/10 text-[#00d4ff] border border-[#00d4ff]/30">
-                  5th Semester
+                  6th Semester
                 </span>
                 <span className="px-3 py-1 text-xs rounded-full bg-[#8b5cf6]/10 text-[#8b5cf6] border border-[#8b5cf6]/30">
                   Informatics Engineering
@@ -95,7 +95,7 @@ export default function About() {
                     Education & Current Focus
                   </h3>
                   <p className="text-gray-400 leading-relaxed mb-4 text-sm sm:text-base">
-                    I&apos;m a 5th-semester Informatics Engineering student with
+                    I&apos;m a 6th-semester Informatics Engineering student with
                     a strong passion for bridging the gap between traditional
                     web development and cutting-edge AI technologies. My journey
                     in tech has led me to explore various domains, from building
@@ -135,7 +135,7 @@ export default function About() {
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#8b5cf6] shrink-0" />
-                  UI/UX Design
+                  Android Development
                 </li>
               </ul>
             </motion.div>

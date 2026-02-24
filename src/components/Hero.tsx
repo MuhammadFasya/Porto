@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Sparkles } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -28,19 +28,6 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#1e1e2e] bg-[#111118]/80 mb-8"
-          >
-            <Sparkles className="w-4 h-4 text-[#00d4ff]" />
-            <span className="text-sm text-gray-400">
-              Available for opportunities
-            </span>
-          </motion.div>
-
           {/* Main Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -64,10 +51,10 @@ export default function Hero() {
           >
             Hi, I&apos;m{" "}
             <span className="text-[#00d4ff] font-semibold">Muhammad Fasya</span>
-            . A 5th-semester Informatics Engineering student and Full-stack
-            Developer passionate to build intelligent web applications using{" "}
+            . A 6th-semester Informatics Engineering student and Full-stack
+            Developer passionate to build intelligent applications using{" "}
             <span className="text-white font-medium">Next.js</span>,{" "}
-            <span className="text-white font-medium">Laravel</span>, and{" "}
+            <span className="text-white font-medium">React Native</span>, and{" "}
             <span className="text-white font-medium">
               Computer Vision (YOLO)
             </span>
@@ -96,6 +83,16 @@ export default function Hero() {
               whileTap={{ scale: 0.95 }}
             >
               Contact Me
+            </motion.a>
+            <motion.a
+              href="/resume.pdf"
+              download
+              className="px-8 py-4 border border-[#1e1e2e] bg-[#111118]/80 text-white font-semibold rounded-full hover:border-[#00d4ff]/50 hover:bg-[#111118] transition-all duration-300 flex items-center gap-2"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Download className="w-4 h-4" />
+              Resume
             </motion.a>
           </motion.div>
         </div>

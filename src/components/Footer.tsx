@@ -15,13 +15,13 @@ const socialLinks = [
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "https://linkedin.com/in/muhammadfasya",
+    href: "https://linkedin.com/in/muhammad-fasya",
     color: "#0ea5e9",
   },
   {
     name: "Email",
     icon: Mail,
-    href: "mailto:fasya@example.com",
+    href: "mhmdfasya15@gmail.com",
     color: "#8b5cf6",
   },
 ];
