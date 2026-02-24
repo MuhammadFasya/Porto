@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, Heart, Download } from "lucide-react";
 
 const socialLinks = [
   {
@@ -21,7 +21,7 @@ const socialLinks = [
   {
     name: "Email",
     icon: Mail,
-    href: "mhmdfasya15@gmail.com",
+    href: "mailto:mhmdfasya15@gmail.com",
     color: "#8b5cf6",
   },
 ];
@@ -51,7 +51,7 @@ export default function Footer() {
           </p>
 
           {/* Social Links */}
-          <div className="flex items-center justify-center gap-4 mb-12">
+          <div className="flex items-center justify-center gap-4 mb-6">
             {socialLinks.map((link) => {
               const IconComponent = link.icon;
               return (
@@ -70,6 +70,18 @@ export default function Footer() {
               );
             })}
           </div>
+
+          {/* Resume Download Button */}
+          <motion.a
+            href="/resume.pdf"
+            download
+            className="inline-flex items-center gap-2 px-6 py-3 mb-12 border border-[#1e1e2e] bg-[#111118]/80 text-white font-medium rounded-full hover:border-[#00d4ff]/50 hover:bg-[#111118] transition-all duration-300"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Download className="w-4 h-4" />
+            Download Resume
+          </motion.a>
 
           {/* Divider */}
           <div className="h-px w-full max-w-xs mx-auto bg-linear-to-r from-transparent via-[#1e1e2e] to-transparent mb-8" />

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Download } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -83,16 +83,6 @@ export default function Hero() {
               whileTap={{ scale: 0.95 }}
             >
               Contact Me
-            </motion.a>
-            <motion.a
-              href="/resume.pdf"
-              download
-              className="px-8 py-4 border border-[#1e1e2e] bg-[#111118]/80 text-white font-semibold rounded-full hover:border-[#00d4ff]/50 hover:bg-[#111118] transition-all duration-300 flex items-center gap-2"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Download className="w-4 h-4" />
-              Resume
             </motion.a>
           </motion.div>
         </div>
